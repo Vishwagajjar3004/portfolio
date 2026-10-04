@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vishwa Gajjar | AI Developer & Python Developer</title>
+<meta name="description" content="Portfolio of Vishwa Gajjar, AI Developer and Python Developer (MCA, AI & Data Science) based in Bhavnagar, Gujarat, India.">
+<style>
+:root{--bg:#070b16;--card:rgba(255,255,255,.04);--bd:rgba(255,255,255,.09);--tx:#e8ecf5;--mu:#98a2b8;--a:#4f8cff;--b:#8b5cf6;--c:#22d3ee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#070b16}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:84px 0;position:relative}
+h1,h2,h3{line-height:1.2;margin:0}
+.grad{background:linear-gradient(90deg,var(--a),var(--b),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.st{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:8px}
+.sub{color:var(--mu);margin:0 0 36px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(7,11,22,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+.nb{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;letter-spacing:.3px}
+.links{display:flex;gap:26px}
+.links a{color:var(--mu);font-size:.93rem;transition:color .2s}
+.links a:hover{color:#fff}
+.ham{display:none;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:10px;width:42px;height:42px;font-size:1.2rem;cursor:pointer}
+@media(max-width:780px){.ham{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(7,11,22,.97);border-bottom:1px solid var(--bd)}.links.open{display:flex}.links a{padding:14px 24px;border-top:1px solid var(--bd)}}
+#hero{min-height:100vh;display:flex;align-items:center;padding-top:110px;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+#hero .glow{position:absolute;width:520px;height:520px;right:-120px;top:10%;background:radial-gradient(circle,rgba(139,92,246,.28),transparent 65%);filter:blur(30px)}
+.hero-in{position:relative;z-index:2}
+.tag{display:inline-block;font-size:.82rem;color:var(--c);border:1px solid rgba(34,211,238,.35);padding:4px 12px;border-radius:99px;margin-bottom:20px}
+h1{font-size:clamp(2.3rem,6.5vw,4rem);margin-bottom:14px}
+.role{font-size:clamp(1rem,2.4vw,1.25rem);color:var(--mu);margin-bottom:16px}
+.desc{max-width:560px;color:#c3cbdc;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;font-size:.95rem;border:1px solid var(--bd);background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer;color:var(--tx);font-family:inherit}
+.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.25)}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));border:0;color:#fff;box-shadow:0 8px 28px rgba(79,140,255,.28)}
+.btn.sm{padding:8px 14px;font-size:.85rem;border-radius:10px}
+.glass{background:var(--card);border:1px solid var(--bd);border-radius:18px;backdrop-filter:blur(8px)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.about{display:grid;gap:30px;grid-template-columns:1.5fr 1fr}
+@media(max-width:780px){.about{grid-template-columns:1fr}}
+.about p{color:#c3cbdc;margin:0 0 14px}
+.facts{padding:24px}
+.facts div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--bd);font-size:.92rem}
+.facts div:last-child{border:0}
+.facts span{color:var(--mu)}
+.sk{padding:22px;transition:transform .25s,border-color .25s}
+.sk:hover{transform:translateY(-4px);border-color:rgba(139,92,246,.5)}
+.sk h3{font-size:1.02rem;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.8rem;padding:4px 11px;border-radius:99px;background:rgba(79,140,255,.1);border:1px solid rgba(79,140,255,.25);color:#cfe0ff}
+.tl{position:relative;padding-left:28px;border-left:2px solid var(--bd);display:grid;gap:22px}
+.tli{position:relative;padding:22px}
+.tli::before{content:"";position:absolute;left:-37px;top:28px;width:14px;height:14px;border-radius:50%;background:linear-gradient(var(--a),var(--b));box-shadow:0 0 14px var(--b)}
+.tli h3{font-size:1.1rem}
+.meta{color:var(--c);font-size:.85rem;margin:4px 0 10px}
+.tli ul,.pc ul{margin:0 0 14px;padding-left:18px;color:#c3cbdc;font-size:.93rem}
+.pc{padding:24px;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s,border-color .3s;position:relative;overflow:hidden}
+.pc::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(79,140,255,.14),rgba(139,92,246,.14));opacity:0;transition:opacity .3s;pointer-events:none}
+.pc:hover{transform:translateY(-6px);border-color:rgba(79,140,255,.5);box-shadow:0 18px 40px rgba(79,140,255,.16)}
+.pc:hover::after{opacity:1}
+.pc>*{position:relative;z-index:1}
+.pc h3{font-size:1.15rem;margin-bottom:8px}
+.pc p{color:#c3cbdc;margin:0 0 14px;font-size:.93rem}
+.pc .chips{margin-bottom:14px}
+.pc .btns{margin-top:auto}
+.empty{padding:22px;color:var(--mu);font-size:.93rem}
+.resume{text-align:center;padding:44px 20px}
+.cgrid{display:grid;gap:24px;grid-template-columns:1fr 1fr}
+@media(max-width:780px){.cgrid{grid-template-columns:1fr}}
+form{padding:24px;display:grid;gap:14px}
+label{font-size:.85rem;color:var(--mu);display:grid;gap:6px}
+input,textarea{background:rgba(255,255,255,.05);border:1px solid var(--bd);border-radius:10px;padding:12px;color:var(--tx);font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--a);outline-offset:1px}
+.ci{padding:24px;display:grid;gap:14px;align-content:start}
+.ci a:hover{color:var(--c)}
+.ci small{color:var(--mu);display:block}
+footer{border-top:1px solid var(--bd);padding:30px 0;color:var(--mu);font-size:.9rem}
+.fi{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+.soc{display:flex;gap:12px}
+.soc a{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--bd);border-radius:10px;transition:.2s}
+.soc a:hover{border-color:var(--c);color:var(--c);transform:translateY(-2px)}
+.soc svg{width:18px;height:18px;fill:currentColor}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><div class="wrap nb"><a href="#home" class="logo grad" id="logo"></a><button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false">☰</button><div class="links" id="links"></div></div></nav>
+<main id="app"></main>
+<footer><div class="wrap fi"><div id="copy"></div><div class="soc" id="soc"></div></div></footer>
+
+<script>
+/* ============ EDIT EVERYTHING HERE ============ */
+const CONFIG = {
+  name: "Vishwa Gajjar",
+  role: "AI Developer | Python Developer | AI & Data Science",
+  intro: "I build intelligent, practical solutions using Python, Machine Learning and Artificial Intelligence.",
+  location: "Bhavnagar, Gujarat, India",
+  email: "vishwagajjar3004@gmail.com",
+  github: "https://github.com/Vishwagajjar3004",
+  linkedin: "https://www.linkedin.com/in/vishwagajjar3004",
+  about: [
+    "I am an MCA candidate specializing in AI & Data Science, with hands-on experience building Python, Machine Learning and full-stack software solutions, backed by 5 months of professional experience as an AI Service Developer at RemoteDevs Infotech.",
+    "I focus on turning data and models into practical, working products: from feature engineering and model evaluation to APIs and web interfaces that people can actually use.",
+    "I am seeking roles as an AI Developer, AI Solution Developer or Python Developer."
+  ],
+  facts: [["Education","MCA – AI & Data Science"],["Experience","5 months professional"],["Focus","AI & Data Science"],["Location","Bhavnagar, India"]],
+  skills: {
+    "Programming": ["Python","Java","PHP","JavaScript"],
+    "AI & Machine Learning": ["Machine Learning","Artificial Intelligence","Scikit-learn","Pandas","NumPy","Matplotlib","KNN","Decision Tree","K-Means","PCA","Feature Engineering","Model Evaluation"],
+    "Web Development": ["HTML","CSS","JavaScript","React.js","Node.js","Laravel"],
+    "Database": ["SQL","Oracle"],
+    "Tools": ["Git","GitHub","VS Code","Jupyter Notebook","Anaconda"]
+  },
+  experience: [
+    { company: "RemoteDevs Infotech", role: "AI Service Developer", duration: "Present",
+      responsibilities: ["Designing and developing AI-based applications","Building intelligent chatbots, automation tools and LLM solutions","Developing computer vision applications for smart detection systems","Integrating AI models, APIs and Python-based solutions"],
+      tech: ["Python","LLMs","Computer Vision","APIs","Automation"] }
+  ],
+  projects: [
+    { name: "AI News Agent", desc: "Python agent that gathers news and delivers a concise daily digest by email.",
+      tech: ["Python","AI","Automation"], features: ["Automated daily digest","AI-assisted summarization"], github: "https://github.com/Vishwagajjar3004/news-agent", demo: "#" },
+    { name: "University Management System", desc: "Web application for managing university records and workflows.",
+      tech: ["PHP","SQL","HTML/CSS"], features: ["Role-based modules","Database-backed records"], github: "#", demo: "#" },
+    { name: "Machine Learning Prediction Project", desc: "End-to-end prediction pipeline from data preparation to model evaluation.",
+      tech: ["Python","Scikit-learn","Pandas"], features: ["Feature engineering","Model comparison and evaluation"], github: "#", demo: "#" },
+    { name: "PDF / AI Chatbot", desc: "Chatbot that answers questions grounded in uploaded documents.",
+      tech: ["React.js","Python","LLM"], features: ["Document-grounded answers","Chat interface"], github: "#", demo: "#" },
+    { name: "AI/ML Mini Projects", desc: "Collection of focused experiments in clustering, classification and dimensionality reduction.",
+      tech: ["KNN","K-Means","PCA","Decision Tree"], features: ["Jupyter notebooks","Visual result analysis"], github: "#", demo: "#" }
+  ],
+  education: [
+    { title: "MCA – AI & Data Science", org: "Gyanmanjari Innovative University (GMIU), Bhavnagar", period: "Oct 2025 – Present" },
+    { title: "BCA", org: "MKBU · Nandkuvarba Mahila College, Bhavnagar", period: "Oct 2022 – Apr 2025" }
+  ],
+  certifications: [ /* { name:"", org:"", date:"", link:"" } */ ]
+};
+/* ============================================== */
+
+const $ = (s) => document.querySelector(s);
+const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const chips = (a) => `<div class="chips">${a.map((x) => `<span class="chip">${esc(x)}</span>`).join("")}</div>`;
+const head = (t, s) => `<h2 class="st grad">${t}</h2><p class="sub">${s}</p>`;
+const ico = {
+  gh: '<svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>',
+  li: '<svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zm7 0h3.83v1.54h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V21h-4V9.75z"/></svg>',
+  ml: '<svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v.2L12 12.5 19.5 7.2V7L12 12.2z"/></svg>'
+};
+const C = CONFIG;
+const nav = ["Home","About","Skills","Experience","Projects","Education","Contact"];
+
+$("#logo").textContent = C.name;
+$("#links").innerHTML = nav.map((n) => `<a href="#${n.toLowerCase()}">${n}</a>`).join("");
+$("#copy").textContent = `© 2026 ${C.name}. All Rights Reserved.`;
+$("#soc").innerHTML = `<a href="${esc(C.github)}" aria-label="GitHub" target="_blank" rel="noopener">${ico.gh}</a><a href="${esc(C.linkedin)}" aria-label="LinkedIn" target="_blank" rel="noopener">${ico.li}</a><a href="mailto:${esc(C.email)}" aria-label="Email">${ico.ml}</a>`;
+
+const exp = C.experience.map((e) => `<div class="tli glass rv"><h3>${esc(e.role)} · ${esc(e.company)}</h3><div class="meta">${esc(e.duration)}</div><ul>${e.responsibilities.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>${chips(e.tech)}</div>`).join("");
+const edu = C.education.map((e) => `<div class="tli glass rv"><h3>${esc(e.title)}</h3><div class="meta">${esc(e.period)}</div><div>${esc(e.org)}</div></div>`).join("");
+const certs = C.certifications.length
+  ? `<div class="grid">${C.certifications.map((c) => `<div class="glass sk rv"><h3>${esc(c.name)}</h3><div class="meta">${esc(c.org)} · ${esc(c.date)}</div>${c.link ? `<a class="btn sm" href="${esc(c.link)}" target="_blank" rel="noopener">View credential</a>` : ""}</div>`).join("")}</div>`
+  : `<div class="glass empty rv">Certifications will appear here. Add entries to <code>CONFIG.certifications</code> (name, org, date, link).</div>`;
+
+$("#app").innerHTML = `
+<section id="home"><canvas id="net" aria-hidden="true"></canvas><div class="glow"></div>
+ <div class="wrap hero-in"><span class="tag">Open to AI &amp; Python roles</span>
+ <h1>Hi, I'm <span class="grad">${esc(C.name)}</span></h1>
+ <div class="role">${esc(C.role)}</div><p class="desc">${esc(C.intro)}</p>
+ <div class="btns"><a class="btn p" href="#projects">View My Projects</a><a class="btn" href="#contact">Contact Me</a></div></div></section>
+<section id="about"><div class="wrap">${head("About Me","Who I am and what I build")}<div class="about rv"><div>${C.about.map((p) => `<p>${esc(p)}</p>`).join("")}</div><div class="glass facts">${C.facts.map((f) => `<div><span>${esc(f[0])}</span><b>${esc(f[1])}</b></div>`).join("")}</div></div></div></section>
+<section id="skills"><div class="wrap">${head("Skills","Technologies I work with")}<div class="grid">${Object.entries(C.skills).map(([k, v]) => `<div class="glass sk rv"><h3>${esc(k)}</h3>${chips(v)}</div>`).join("")}</div></div></section>
+<section id="experience"><div class="wrap">${head("Experience","Professional timeline")}<div class="tl">${exp}</div></div></section>
+<section id="projects"><div class="wrap">${head("Projects","Selected work")}<div class="grid">${C.projects.map((p) => `<article class="glass pc rv"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p>${chips(p.tech)}<ul>${p.features.map((f) => `<li>${esc(f)}</li>`).join("")}</ul><div class="btns"><a class="btn sm" href="${esc(p.github)}" target="_blank" rel="noopener">GitHub</a><a class="btn sm p" href="${esc(p.demo)}" target="_blank" rel="noopener">Live Demo</a></div></article>`).join("")}</div></div></section>
+<section id="education"><div class="wrap">${head("Education","Academic background")}<div class="tl">${edu}</div></div></section>
+<section id="certifications"><div class="wrap">${head("Certifications","Credentials and courses")}${certs}</div></section>
+<section id="contact"><div class="wrap">${head("Contact","Let's talk about your next AI or Python project")}
+ <div class="cgrid"><form class="glass rv" id="form"><label>Name<input name="n" required autocomplete="name"></label><label>Email<input type="email" name="e" required autocomplete="email"></label><label>Message<textarea name="m" rows="5" required></textarea></label><button class="btn p" type="submit">Send Message</button></form>
+ <div class="glass ci rv"><div><small>Location</small>${esc(C.location)}</div><div><small>Email</small><a href="mailto:${esc(C.email)}">${esc(C.email)}</a></div><div><small>LinkedIn</small><a href="${esc(C.linkedin)}" target="_blank" rel="noopener">${esc(C.linkedin)}</a></div><div><small>GitHub</small><a href="${esc(C.github)}" target="_blank" rel="noopener">${esc(C.github)}</a></div></div></div></div></section>`;
+
+$("#form").addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  const f = new FormData(ev.target);
+  const body = `${f.get("m")}\n\n— ${f.get("n")} (${f.get("e")})`;
+  location.href = `mailto:${C.email}?subject=${encodeURIComponent("Portfolio enquiry from " + f.get("n"))}&body=${encodeURIComponent(body)}`;
+});
+const ham = $("#ham"), links = $("#links");
+ham.addEventListener("click", () => { const o = links.classList.toggle("open"); ham.setAttribute("aria-expanded", o); });
+links.addEventListener("click", () => { links.classList.remove("open"); ham.setAttribute("aria-expanded", false); });
+
+const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll(".rv").forEach((el) => io.observe(el));
+
+
+/* subtle neural-network background */
+(function () {
+  const cv = $("#net"), x = cv.getContext("2d");
+  if (matchMedia("(prefers-reduced-motion:reduce)").matches) return;
+  let w, h, pts = [];
+  const size = () => { w = cv.width = cv.offsetWidth; h = cv.height = cv.offsetHeight; pts = Array.from({ length: Math.min(60, Math.floor(w / 22)) }, () => ({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35 })); };
+  size(); addEventListener("resize", size);
+  (function draw() {
+    x.clearRect(0, 0, w, h);
+    pts.forEach((p, i) => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > w) p.vx *= -1;
+      if (p.y < 0 || p.y > h) p.vy *= -1;
+      x.fillStyle = "rgba(34,211,238,.8)"; x.beginPath(); x.arc(p.x, p.y, 1.6, 0, 6.3); x.fill();
+      for (let j = i + 1; j < pts.length; j++) {
+        const d = Math.hypot(p.x - pts[j].x, p.y - pts[j].y);
+        if (d < 130) { x.strokeStyle = `rgba(139,92,246,${.35 * (1 - d / 130)})`; x.beginPath(); x.moveTo(p.x, p.y); x.lineTo(pts[j].x, pts[j].y); x.stroke(); }
+      }
+    });
+    requestAnimationFrame(draw);
+  })();
+})();
+</script>
+</body>
+</html>
